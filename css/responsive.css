@@ -223,6 +223,11 @@
 	.our-studio-content{
 		padding:15px; 
 	}
+	#about.testimonials .our-story {
+	    margin-top: 0;
+	    padding-top: 330px;
+	    background-position: top !important;
+	}
 
 }
 
@@ -451,4 +456,23 @@
 	body > div.container.margin-top.second-section > div.col-md-5.col-md-offset-1 > div > div > div:nth-child(2){
 		margin-top: 15px;
 	}
+
+	/*testimonials*/
+	.home-portfolio-image img{
+		width: auto;
+		height: 100%;
+	}
+	.home-portfolio-image{
+		height: 450px;
+	}
+	.home-portfolio-image.mid{
+		height: 520px;
+	}
+	.home-portfolio-image.long{
+		height: 580px;
+	}
+	.home-portfolio-image.longer{
+		height: 650px;
+	}
+
 }

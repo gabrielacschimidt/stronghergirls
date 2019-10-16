@@ -602,6 +602,7 @@ a:hover>span.site-name{
 .header-page {
     position: relative;
     min-height: 450px;
+    background-size: cover;
 }
 .header-page .inner-content {
     padding: 25px;
@@ -2023,6 +2024,8 @@ ul.client-thumb-2 li a img:hover{
     transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -o-transition: opacity 0.35s, -o-transform 0.35s;
+    filter:grayscale(1);
+    opacity: 0.6;
 }
 .img:hover img {
     -webkit-transform: scale(1.1);
@@ -2040,6 +2043,12 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
     cursor: url(../img/cursor.png), auto;
 }
+.overlay-thumb .details span.info {
+    font-size: 14px;
+     text-transform: none; 
+    letter-spacing: 0;
+    line-height: 1.5;
+}
 .img .overlay-thumb {
     position: absolute;
     top: 0;
@@ -2053,7 +2062,7 @@ ul.client-thumb-2 li a img:hover{
     z-index: 4;
 }
 .img .overlay-thumb:hover {
-    background-color: rgba(123, 238, 199, .9);
+    background-color: rgba(239, 160, 220, 0.75);
 }
 
 .img .overlay-thumb.bg-white:hover{
@@ -2149,7 +2158,7 @@ ul.client-thumb-2 li a img:hover{
 }
 .details span {
     display: block;
-    opacity: 0;
+    /*opacity: 0;*/
     position: relative;
     top: 100px;
     transition-property: top, opacity;
@@ -3300,6 +3309,42 @@ a img.aligncenter {
     margin-top: 25px;
     display: block;
 }
+#about.testimonials .our-story-content{
+    margin-top: -70px;
+}
+#about.testimonials .our-story{
+    margin-top: 50px;
+}
+#about.testimonials p{
+    font-weight: 400;
+}
+.home-portfolio-image img{
+    object-fit: cover;
+}
+.home-portfolio-image .details{
+    height: 250px;
+    transition: 0.2s ease;
+}
+.home-portfolio-image  .details:after{
+    content: "Click to read more";
+    color: #fff;
+    font-weight: 700;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    left: 0;
+    padding: 50px 20px 10px;
+    background-image: linear-gradient(to bottom, rgba(239, 160, 220,0), rgba(239, 160, 220,1));
+    transition: 0.2s ease;
+}
+.overlay-thumb:hover .details {
+    height: auto;
+}
+.overlay-thumb:hover .details:after {
+    opacity: 0;
+}
 
 /*sign up page*/
 
@@ -3336,6 +3381,8 @@ a img.aligncenter {
     background: transparent;
     height: 2px;
 }
+
+
 
 /*#vue-form .panel-heading,
 .branding.pitch-text{

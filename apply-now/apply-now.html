@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sign Up Now - StrongHER Girls™/title>
+    <title>Apply Now - StrongHER Girls™/title>
     <meta name="description" content="StrongHER Girls™ Coaching & Personal Training will teach you how to be strong, from the inside-out. We give you the tools to empower yourself through remote and in-person training.">
     <meta name="keywords" content="Weightlifting,Brooklyn,Coaching,Personal Training,Coaching for Womxn,Womxn">
     <meta name="msapplication-tap-highlight" content="yes" />
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../css/responsive.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/ico" href="../favicon.ico">
 
     <!-- Modernizer & Respond js -->
     <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -107,7 +107,7 @@
                                 <li><a href="about" class="smooth">ABOUT</a></li>
                                 <li><a href="/#services" class="smooth">SERVICES</a></li><li><a href="testimonials">TESTIMONIALS</a></li>
                                 <li><a href="contact">Contact</a></li>
-                                <li><a href="signup">Sign Up</a></li>
+                                <li><a href="apply-now">Apply Now</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -143,7 +143,7 @@
                 <div class="row">
                     <div class="inner-content">
                         <div class="header-content">
-                            <h1>Sign Up</h1>
+                            <h1>Apply Now</h1>
                             <hr>
                             <p>Everything we need to know to tailor our service for you.</p>
                         </div>
@@ -155,7 +155,7 @@
 
     <div id="form-sign-up" class="container margin-top">
         <div class="main-title col-md-push-2 col-md-10">
-            <h1>Sign Up Form</h1>
+            <h1>Application Form</h1>
             <hr>
         </div>
 
@@ -165,7 +165,25 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="Name">Name</label>  
               <div class="col-md-6">
-              <input id="name" name="Name" type="text" placeholder="Enter your Name" class="form-control input-md" required="">
+              <input id="name" name="Name" type="text" placeholder="Enter your first name and last name" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="pronouns">Pronouns</label>  
+              <div class="col-md-6">
+              <input id="pronouns" name="Pronouns" type="pronouns" placeholder="Enter your Pronouns" class="form-control input-md">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="age">Age</label>  
+              <div class="col-md-6">
+              <input id="age" name="Age" type="text" placeholder="Enter your Age" class="form-control input-md">
                 
               </div>
             </div>
@@ -188,13 +206,106 @@
               </div>
             </div>
 
-            <!-- Multiple Radios -->
+            <!-- Text input-->
             <div class="form-group">
+              <label class="col-md-4 control-label" for="Instagram">Instagram</label>  
+              <div class="col-md-6">
+              <input id="Instagram" name="Instagram" type="text" placeholder="Enter your Instagram (if you have one)" class="form-control input-md">
+                
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Occupation">What is your current occupation? </label>  
+              <div class="col-md-6">
+              <input id="Occupation" name="Occupation" type="text" placeholder="Enter your occupation (if you have one)" class="form-control input-md">
+                
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="FitnessGoals">What are your fitness goals for the next 90 days?</label>
+              <div class="col-md-6">                     
+                <textarea class="form-control" id="goals" name="FitnessGoals"></textarea>
+              </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="Obstacles">What has been your biggest obstacle in fitness? </label>
+              <div class="col-md-6">                     
+                <textarea class="form-control" id="obstacles" name="Obstacles"></textarea>
+              </div>
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="ImportanceOfGoals">On a scale of 1 to 5, how important is it for you to reach these goals?<br>
+              <em style="font-weight: 400;">1 = not important at all and 5 = very important</em></label>
+              <div class="col-md-6">                     
+                <select id="importance-goals" name="ImportanceOfGoals" style="height: 40px;">
+                  <option value="" selected disabled hidden>Choose the importance</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Select -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="FinancialInvestiment">On a scale of 1 to 5, how ready are you to make a significant financial investment in your body & health?<br>
+              <em style="font-weight: 400;">1 = not ready at all and 5 = very ready to significantly invest for a significant goal</em></label>
+              <div class="col-md-6">                     
+                <select id="financial-investiment" name="FinancialInvestiment" style="height: 40px;">
+                  <option value="" selected disabled hidden>Choose the importance</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Single Radios -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="commitment">Are you ready to COMMIT?</label>
+              <div class="col-md-4">
+                <div class="radio">
+                  <label for="commitment-0">
+                    <input type="radio" name="Commitment" id="commitment-0" value="Yes" checked="checked">
+                    Yes
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Radios -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="start">Are you ready to START NOW?</label>
+              <div class="col-md-4">
+                <div class="radio">
+                  <label for="start-0">
+                    <input type="radio" name="Start" id="start-0" value="Yes" checked="checked">
+                    Yes
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Multiple Radios -->
+            <!-- <div class="form-group">
               <label class="col-md-4 control-label" for="coach-service">Coaching Service</label>
               <div class="col-md-4">
               <div class="radio">
                 <label for="coach-service-0">
-                  <input type="radio" name="Coaching Service" id="coach-service-0" value="12-Week Coaching">
+                  <input type="radio" name="Coaching Service" id="coach-service-0" value="12-Week Coaching" checked="checked">
                   12-Week Coaching
                 </label>
                 </div>
@@ -205,171 +316,12 @@
                 </label>
                 </div>
               </div>
-            </div>
-
-            <div class="text-title col-md-12 no-padding">
-                <div class="col-md-8 col-md-push-2 no-padding">
-                <h3><b>Nutrition</b></h3>
-                <blockquote>Please answer these questions as honestly as possible.</blockquote>
-                </div>
-            </div>
-            
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="age">Age</label>  
-              <div class="col-md-6">
-              <input id="age" name="Age" type="text" placeholder="Enter your Age" class="form-control input-md">
-                
-              </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="height">Height</label>  
-              <div class="col-md-6">
-              <input id="height" name="Height" type="text" placeholder="Write your height in inches or cm" class="form-control input-md">
-                
-              </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="weight">Current Weight</label>  
-              <div class="col-md-6">
-              <input id="weight" name="Weight" type="text" placeholder="Write your weight in kg or lbs" class="form-control input-md">
-                
-              </div>
-            </div>
-
-            <!-- Text input-->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="training-age">Training Age</label>  
-              <div class="col-md-6">
-              <input id="training-age" name="Training Age" type="text" placeholder="How long you have been training using weights?" class="form-control input-md">
-                
-              </div>
-            </div>
-
-            <div class="form-group">
-              <hr class="col-md-8 col-md-push-2">
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="goals">What are your goals?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="goals" name="What are your goals?" placeholder="Cite your goals and aspirations in fitness."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="experience">Have you lifted in the past and if so, how was the experience?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="experience" name="Have you lifted in the past and if so, how was the experience?" placeholder="Tell us more about your past experience."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="coaches-past">If applicable: What has worked with coaches in the past?  What hasn’t worked in previous coaching relationships? </label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="coaches-past" name="What has worked with coaches in the past?  What hasn’t worked in previous coaching relationships?" placeholder="Tell us more about your past experience with coaches."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="availability">How many days will you be able to train? How long do you want to spend in the gym? </label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="availability" name="How many days will you be able to train? How long do you want to spend in the gym?" placeholder="How is your availability?"></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="stress">How are your stress levels?  What’s going on in your life outside of working out? What outlets do you have for stress relief?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="stress" name="How are your stress levels?  What’s going on in your life outside of working out? What outlets do you have for stress relief?" placeholder="Talk about your stress lvels, no judgement."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="injuries">Any injuries that we should know about?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="injuries" name="Any injuries that we should know about?" placeholder="This applies to injuries and also aches, pains, movements that bother you."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="diet-restrictions">Do you have any dietary restrictions?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="diet-restrictions" name="Do you have any dietary restrictions?" placeholder="Please cite allergies and dietary choices."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="work-levels">Do you feel you respond better to higher volumes, or higher intensities?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="work-levels" name="Do you feel you respond better to higher volumes, or higher intensities?" placeholder="This doesn't necessarily make your program higher or lower anything, it is more about self-perception."></textarea>
-              </div>
-            </div>
-
-            <div class="text-title col-md-12 no-padding">
-                <div class="col-md-8 col-md-push-2 no-padding">
-                <h3><b>Goals</b></h3>
-                <blockquote>Please answer these questions as honestly as possible.</blockquote>
-                </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="goals-lifting">Why do you want to meet your goals through lifting weights?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="goals-lifting" name="Why do you want to meet your goals through lifting weights?" placeholder="Tell us more about what you want to accomplish."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="experience-online-coaching">Have you ever done online coaching and if so, how was the experience?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="experience-online-coaching" name="Have you ever done online coaching and if so, how was the experience?" placeholder="Tell us about your experience."></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="week-routine">What do your other commitments during the week look like?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="week-routine" name="What do your other commitments during the week look like?" placeholder="Talk about your routine :)"></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="other-sports">Other sports / strenuous physical activity outside of training: </label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="other-sports" name="Other sports / strenuous physical activity outside of training:" placeholder="Do you enjoy other sports outside of lifting, and/or do you have a job or hobby that stresses physical labor?"></textarea>
-              </div>
-            </div>
-
-            <!-- Textarea -->
-            <div class="form-group">
-              <label class="col-md-4 control-label" for="medical-issues">Any medical issues we should know about?</label>
-              <div class="col-md-6">                     
-                <textarea class="form-control" id="medical-issues" name="Any medical issues we should know about?" placeholder="Please let us know."></textarea>
-              </div>
-            </div>
+            </div> -->
 
             <!-- Button -->
             <div class="form-group">
               <div class="col-md-12">
-                <button id="submit" name="submit" class="btn btn-primary btn-strongher">SIGN UP</button>
+                <button id="submit" name="submit" class="btn btn-primary btn-strongher">Apply Now</button>
               </div>
             </div>
 
@@ -423,7 +375,7 @@
                                     <li><a href="about" class="smooth">ABOUT</a></li>
                                     <li><a href="/#services" class="smooth">SERVICES</a></li><li><a href="testimonials">TESTIMONIALS</a></li>
                                     <li><a href="contact">CONTACT</a></li>
-                                    <li><a href="signup">SIGN UP</a></li>
+                                    <li><a href="apply-now">Apply Now</a></li>
                                 </ul>
                             </div>
                             <span class="copyright-mark">&copy; All photos by The Lex Scott<br>&copy; 2019 StrongHER Girls™, ALL RIGHTS RESERVED</span>
